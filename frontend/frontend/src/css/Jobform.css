@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Poppins,sans-serif;
+    background:#111;
+}
+
+.job-page{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:50px;
+    background:
+    linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.45)),
+    url("/addjob.svg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+  
+}
+
+.job-container{
+    width:430px;
+    padding:35px;
+    margin-left:70px;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:18px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.35);
+}
+
+.job-container h2{
+    color:#fff;
+    text-align:center;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+.job-container form{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+.job-container input,
+.job-container textarea{
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    color:#fff;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.job-container input::placeholder,
+.job-container textarea::placeholder{
+    color:#cfcfcf;
+}
+
+.job-container textarea{
+    resize:vertical;
+    min-height:100px;
+}
+.job-container input:focus,
+.job-container textarea:focus{
+
+    background:rgba(255,255,255,.12);
+
+    border-color:#ff9d2f;
+}
+
+.job-container button{
+    margin-top:8px;
+    padding:13px;
+    border:none;
+    border-radius:8px;
+    background:#ff7a00;
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.job-container button:hover{
+    background:#ff9433;
+}
+
+@media(max-width:900px){
+
+.job-page{
+    justify-content:center;
+    padding:25px;
+}
+
+.job-container{
+    margin-left:0;
+    width:100%;
+    max-width:430px;
+}
+
+}
+
+@media(max-width:500px){
+
+.job-container{
+    padding:25px;
+}
+
+.job-container h2{
+    font-size:1.7rem;
+}
+
+}
